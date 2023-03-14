@@ -1,7 +1,7 @@
 /**
- * Sitech
+ * BharatRide
  * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
- * Exclusively on https://1.envato.market/sitech-html
+ * Exclusively on https://1.envato.market/bharatride-html
  *
  * @encoding        UTF-8
  * @version         1.0.0
@@ -10,43 +10,51 @@
  * @contributors    Lilith Lamber (winter.rituel@gmail.com)
  * @support         help@merkulov.design
  **/
-"use strict";
+'use strict';
 
 export function preventDefault() {
-    document.addEventListener('click', function (e) {
-        if ((e.target.tagName === 'A' && e.target.getAttribute('href') === '#') || (e.target.closest('a') !== null && e.target.closest('a').getAttribute('href') === '#')) {
-            e.preventDefault();
-        }
-    });
+  document.addEventListener('click', function (e) {
+    if (
+      (e.target.tagName === 'A' && e.target.getAttribute('href') === '#') ||
+      (e.target.closest('a') !== null &&
+        e.target.closest('a').getAttribute('href') === '#')
+    ) {
+      e.preventDefault();
+    }
+  });
 
-    document.addEventListener('submit', e => {
-        if (e.target.tagName === 'FORM') {
-            e.preventDefault();
-        }
-    })
+  document.addEventListener('submit', (e) => {
+    if (e.target.tagName === 'FORM') {
+      e.preventDefault();
+    }
+  });
 }
 
 export function setCurrentYear() {
-    const container = document.getElementById('currentYear');
+  const container = document.getElementById('currentYear');
 
-    if (container) {
-        container.textContent = String(new Date().getFullYear());
-    }
+  if (container) {
+    container.textContent = String(new Date().getFullYear());
+  }
 }
 
 export function hideCover() {
-    const coverElems = document.querySelectorAll('.cover');
-    if (coverElems) {
-        coverElems.forEach((el, i) => {
-            el.addEventListener('click', () => {
-                el.classList.add('hidden')
-            })
-        })
-    }
+  const coverElems = document.querySelectorAll('.cover');
+  if (coverElems) {
+    coverElems.forEach((el, i) => {
+      el.addEventListener('click', () => {
+        el.classList.add('hidden');
+      });
+    });
+  }
 }
 
 export function setEdgePadding(container) {
-    const margin = parseInt(window.getComputedStyle(document.querySelector(container)).marginLeft),
-        padding = parseInt(window.getComputedStyle(document.querySelector(container)).paddingLeft);
-    return margin + padding
+  const margin = parseInt(
+      window.getComputedStyle(document.querySelector(container)).marginLeft
+    ),
+    padding = parseInt(
+      window.getComputedStyle(document.querySelector(container)).paddingLeft
+    );
+  return margin + padding;
 }

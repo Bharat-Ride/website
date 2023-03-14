@@ -1,7 +1,7 @@
 /**
- * Sitech
+ * BharatRide
  * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
- * Exclusively on https://1.envato.market/sitech-html
+ * Exclusively on https://1.envato.market/bharatride-html
  *
  * @encoding        UTF-8
  * @version         1.0.0
@@ -10,13 +10,13 @@
  * @contributors    Lilith Lamber (winter.rituel@gmail.com)
  * @support         help@merkulov.design
  **/
-"use strict";
+'use strict';
 
 import baguetteBox from 'baguettebox.js';
 
 export default function initGallery(container = '.gallery', options) {
-    const containerEl = document.querySelector(container);
-    if (containerEl) {
-        baguetteBox.run(container, options ? {...options} : {});
-    }
+  const containerEl = document.querySelector(container);
+  if (containerEl) {
+    baguetteBox.run(container, options ? { ...options } : {});
+  }
 }

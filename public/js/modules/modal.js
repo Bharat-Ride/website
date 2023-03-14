@@ -1,7 +1,7 @@
 /**
- * Sitech
+ * BharatRide
  * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
- * Exclusively on https://1.envato.market/sitech-html
+ * Exclusively on https://1.envato.market/bharatride-html
  *
  * @encoding        UTF-8
  * @version         1.0.0
@@ -10,30 +10,30 @@
  * @contributors    Lilith Lamber (winter.rituel@gmail.com)
  * @support         help@merkulov.design
  **/
-"use strict";
+'use strict';
 
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-import {validateForm} from "./forms";
+import Swal from 'sweetalert2/dist/sweetalert2.js';
+import { validateForm } from './forms';
 
 export function initModal(settings, customPopupClass) {
-    Swal.fire({
-        showClass: {
-            popup: 'fadeIn'
-        },
-        hideClass: {
-            popup: 'fadeOut'
-        },
-        showConfirmButton: false,
-        showCloseButton: true,
-        closeButtonHtml: `
+  Swal.fire({
+    showClass: {
+      popup: 'fadeIn',
+    },
+    hideClass: {
+      popup: 'fadeOut',
+    },
+    showConfirmButton: false,
+    showCloseButton: true,
+    closeButtonHtml: `
                 <i class="icon-times"></i>
             `,
-        customClass: {
-            container: 'modal',
-            popup: customPopupClass ? `${customPopupClass}` : 'modal_popup',
-            closeButton: 'modal_popup-close',
-            htmlContainer: 'modal_popup-content',
-        },
-        ...settings
-    })
+    customClass: {
+      container: 'modal',
+      popup: customPopupClass ? `${customPopupClass}` : 'modal_popup',
+      closeButton: 'modal_popup-close',
+      htmlContainer: 'modal_popup-content',
+    },
+    ...settings,
+  });
 }

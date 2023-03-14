@@ -1,7 +1,7 @@
 /**
- * Sitech
+ * BharatRide
  * HTML template with high-quality content and latest design trends that fit product market for SaaS, App Solutions Promo Campaigns, Development Studios, Digital Marketing Agencies, Startups and other rising internet technology services
- * Exclusively on https://1.envato.market/sitech-html
+ * Exclusively on https://1.envato.market/bharatride-html
  *
  * @encoding        UTF-8
  * @version         1.0.0
@@ -11,12 +11,12 @@
  * @support         help@merkulov.design
  **/
 import React from 'react';
-import {Parallax} from "react-scroll-parallax";
+import { Parallax } from 'react-scroll-parallax';
 
 export default function ParallaxEl() {
-    return React.createElement(
-        Parallax,
-        { speed: -10 },
-        React.createElement("div", null)
-    );
+  return React.createElement(
+    Parallax,
+    { speed: -10 },
+    React.createElement('div', null)
+  );
 }
